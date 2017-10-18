@@ -87,6 +87,9 @@ class TestAlimento < Test::Unit::TestCase
         assert_equal(9.090046968612224,@ig_choco)
     end
     
+    def test_type_check 
+        assert_raise(NameError) {Alimento.new(Platano,[2.5,6.8,5.6,3.5])}
+    end
         
     
     
@@ -103,15 +106,5 @@ class TestAlimento < Test::Unit::TestCase
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 end
