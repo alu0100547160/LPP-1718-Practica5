@@ -41,19 +41,19 @@ class Alimento
 	#Este método recibe el valor de el indice glucémico de un alimento 
 	#respecto a un individuo y la cantidad de inidividuos que se comparar 
 	def ig(i_gi,n)
-		ig = 0
+		@ig = 0
 		i_gi.each do |i|
-			ig += i
+			@ig += i
 		end 
-		ig = ig / n 
-		return ig 
+		@ig = ig / n 
+		return @ig 
 	end
 	
 	#Método para imprimir por pantalla el objeto 
 	def to_s
 		s = "Alimento           IG\n"
 		s += "#{@titulo}      "
-		s += "#{ig} "
+		s += "#{@ig} "
 		
 		return s
 	end
