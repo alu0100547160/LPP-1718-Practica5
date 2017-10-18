@@ -7,6 +7,12 @@ class Alimento
 		@gi = gi
 	end
 	
+	def get_titulo
+		
+		return @titulo
+		
+	end 
+	
 	#Se calcula las 24 ares trapezoidales 
 	def areatrapezoide
 		dt = 5
