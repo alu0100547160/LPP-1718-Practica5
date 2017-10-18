@@ -81,6 +81,12 @@ class TestAlimento < Test::Unit::TestCase
         
     end
     
+    def test_simple2
+        assert_equal(77.43094092501174,@ig_compota)
+        assert_equal(87.5655106364575,@ig_yogurt)
+        assert_equal(9.090046968612224,@ig_choco)
+    end
+    
         
     
     
