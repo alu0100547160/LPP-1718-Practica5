@@ -91,7 +91,19 @@ class TestAlimento < Test::Unit::TestCase
         assert_raise(NameError) {Alimento.new(Platano,[2.5,6.8,5.6,3.5])}
     end
         
+    def teardown
+    ## Nothing really
+    end
     
+    def test_to_s
+        
+        assert_equal("Alimento           IG\nCompota de Manzana      77.43094092501174", @alimento1.to_s)
+    
+    end
+    
+    def test_failure 
+        assert_equal("Compota de Manzana", (@alimento1.get_titulo) , "Getter de atributo titulo")
+    end
     
     
     
