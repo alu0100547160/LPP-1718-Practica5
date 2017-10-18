@@ -45,7 +45,7 @@ class Alimento
 		i_gi.each do |i|
 			@ig += i
 		end 
-		@ig = ig / n 
+		@ig = @ig / n 
 		return @ig 
 	end
 	
@@ -53,7 +53,7 @@ class Alimento
 	def to_s
 		s = "Alimento           IG\n"
 		s += "#{@titulo}      "
-		s += "#{@ig} "
+		s += "#{@ig}"
 		
 		return s
 	end
